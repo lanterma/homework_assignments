@@ -5,20 +5,12 @@ practice_string = "this is a string to practice with"
 puts "#{practice_string}"
 puts "#{practice_string}".capitalize
 puts "#{practice_string}".upcase
-puts "#{practice_string}"
+puts "#{practice_string}".gsub("string","'string'")
 puts "The string '#{practice_string}' has #{practice_string.length} characters"
 puts "#{practice_string.reverse}"
 	if practice_string.include?'practice'
 	puts "practice practice practice!"
 	end
-
-
-
-
-
-
-
-
 
 
 
