@@ -19,12 +19,9 @@ puts "There are #{days_in_a_week} days in a week"
 puts  "That means there are:"
 puts  "  #{seconds_in_a_minute * minutes_in_a_hour} seconds in an hour,"
 puts  "  #{seconds_in_a_minute * minutes_in_a_hour * hours_in_a_day} seconds in a day,"
-puts  "  #{days_in_a_week * seconds_in_a_day} in a week"
-puts  """
-That means when you turn 20, you've been alive for #{20 * seconds_in_a_year} seconds,
-and if you make it to 100, you will have lived for #{100 * seconds_in_a_year} seconds. Make them count!
-
-	    """
+puts  "  #{days_in_a_week * seconds_in_a_day} seconds in a week"
+puts  "That means when you turn 20, you've been alive for #{20 * seconds_in_a_year} seconds,"
+puts  "and if you make it to 100, you will have lived #{100 * seconds_in_a_year} seconds. Make them count!"
 
 # There are 60 seconds in a minute
 # There are 60 minutes in an hour
