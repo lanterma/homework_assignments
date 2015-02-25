@@ -33,10 +33,11 @@
 
 
   It would skip the number 15, or any other number that was equally divisible by <br>
-  3 and 5 (30, 45, 60 etc...). Why? Because when the range picks a number say, 15, and <br>
+  3 and 5 (30, 45, 60 etc...). Why? Because when the range picks 15, and <br>
   passes it through the block, it goes through 5 and says: <br>
   "Yes, 5 is divisible by 15, with no remainder, so I will print Buzz. Next number.... <br>
   We don't want that. We need it to stop, and say "Print FizzBuzz if we run into a number <br>
-  that is divisible by 3 and 5. But, if the number is not, then go onto the next line.  <br>
+  that is divisible by 3 and 5. But, if the number is not, say 16, then print 16 and <br>
+   go onto the next line.  <br>
 
 
