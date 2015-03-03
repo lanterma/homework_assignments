@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-def question (question)
+def question(question)
   print "#{question}"
   gets.chomp
 end
