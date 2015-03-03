@@ -2,19 +2,19 @@
 
 number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-puts number.join("...")
-puts "T-#{number.reverse.join(', ')}... BLASTOFF!"
+puts "#{number.join("...")}..."
+puts "T-#{number.reverse.join(', ')}...  BLASTOFF!"
 puts "The last element is #{number.last}"
 puts "The first element is #{number.first}"
 puts "The third element is #{number[2]}"
 puts "The element with an index of 3 is #{number[3]}"
-puts "The element second from last is #{number[8]}"
+puts "The second from last element is #{number[8]}"
 puts "The first four elements are '#{number[0..3].join(', ')}'"
-puts "If we delete 5, 6 and 7 from the array we're left with [#{number.delete_if { |element| element > 4 && element < 8 }.join(',')}]"
+puts "If we delete 5, 6 and 7 from the array, we're left with [#{number.delete_if { |element| element > 4 && element < 8 }.join(',')}]"
 puts "If we add 5 at the beginning of the array, we're left with [#{number.unshift(5).join(',')}]"
-puts "If we add 6 at the end of the array, we're left with #{number.push(6).join(',')}"
-puts "Only the elements #{number.select { |element| element > 8 }} are > than 8."
-puts "If we remove all then elements, then the length of the array is #{number.clear.length}"
+puts "If we add 6 at the end of the array, we're left with [#{number.push(6).join(',')}]"
+puts "Only the elements #{number.select { |element| element > 8 }} are > 8."
+puts "If we remove all the elements, then the length of the array is #{number.clear.length}"
 
 # The output should be the following:
 
