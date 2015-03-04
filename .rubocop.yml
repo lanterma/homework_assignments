@@ -1,6 +1,11 @@
 AllCops:
   Exclude:
     - 'Guardfile'
+    - 'homework_tester/**/*'
 
 StringLiterals:
+  Enabled: false
+
+
+Metrics/LineLength:
   Enabled: false
