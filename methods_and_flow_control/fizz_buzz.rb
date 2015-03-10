@@ -11,4 +11,3 @@
     puts number
   end
 end
-
