@@ -3,7 +3,7 @@
 fizz_buzz_array = (1..100).to_a
 
 fizz_buzz_array.each do |number|
-  if number % 5 == 0 and number % 3 == 0
+  if number % 5 == 0 && number % 3 == 0
     puts "FizzBuzz"
   elsif number % 5 == 0
     puts "Buzz"
