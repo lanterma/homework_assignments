@@ -2,7 +2,7 @@
 
 number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-puts "#{number.join("...")}..."
+puts "#{number.join('...')}..."
 puts "T-#{number.reverse.join(', ')}...  BLASTOFF!"
 puts "The last element is #{number.last}"
 puts "The first element is #{number.first}"
