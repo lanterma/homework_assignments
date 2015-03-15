@@ -33,11 +33,3 @@ register.pay(5.00)  # => "Your new total is $4.00"<br>
 register.total			# => 4.00<br>
 register.pay(5.00)  # => "Your change is $1.00"<br>
 register.total # => 0.00<br>
-
-# Create a program called "cash_register.rb".
-#  Create a CashRegister class
-#  purchase method takes a floating number and adds that to the total
-#  total method returns how much is owed
-#
-# pay method takes one floating number for how much is paid,
-# should return how much change is given
