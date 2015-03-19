@@ -4,41 +4,53 @@ class Shower
   # Water available has initial value of 50
   # different roommates take different water
   # Method Add_Water has ability to add more water
-  # to the shower
+  # to the shower, assuming the water added is
+  # the perfect temperature....
+  # attr_reader :add_water, :roommate_1, :roommate_2, :hot_shower
 
   def initialize
-    @water = 50.0
+    @water = 49
   end
 
-  def add_water
-    @water += 15.0
-  end
+  # def add_water
+  #   @water += 35
+  # end
 
   def roommate_1
-    @water -= 25.0
+    @water -= 48
+    "I'm done! Plenty of water left for you..."
   end
 
   def roommate_2
-    @water -= 10.0
+    @water -= 15
+    "Done! Loads of water left!"
   end
 
-  def roommate_3
-    @water -= 40
+
+  def hot_shower(hot_water=(num).to_i)
+    @water += hot_water
+    "You added #{num} water! "
   end
 
-  def hot_shower(hot_water)
-    @water
-    if @water < 10
-      puts "Add more hot water before showering"
+
+    if @water < 2
+       "Add more hot water before showering."
     else
-      @water > 10
-      puts "Enjoy the hot shower"
+       "Enjoy the hot shower."
     end
-
   end
-end
+
+
+# Now, the idea is to have one roommate take a shower, then
+# after that, if you call hot_shower, then you'll either know you
+# have enough hot water, or not, which is where you can call add_water
 
 shower = Shower.new
-puts shower.hot_shower(1).roommate_1
-puts shower.hot_shower(2).roommate_2
-puts shower.hot_shower(3).roommate_3
+puts shower.roommate_1
+puts shower.hot_shower
+shower.hot_shower(50)
+puts shower.hot_shower
+
+
+ #    puts shower.hot_shower(5)
+ #
