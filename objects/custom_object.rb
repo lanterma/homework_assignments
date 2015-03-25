@@ -1,37 +1,45 @@
 #!/usr/bin/env ruby
 
-class HotWater
-
-  attr_reader :water
+class CampShower
+  attr_reader :water_tank
 
   def initialize
     @water_tank = 100
   end
 
-  def add_water
-    @water_tank += 50
-    puts ""
+  def add_water(water=35)
+    @water_tank += water
+    puts "You added #{water} gallons of water!"
   end
 
-    def shower
-      @water_tank -= 45
-      puts "#{@water_tank} left"
-    end
-
-
-    def water_left_for_me
-      if @water_tank < 20
-        "Add more water"
-      else
-        "There is enough"
-      end
-
-    end
+  def long_shower
+    @water_tank -= 45
+  end
+  def short_shower
+    @water_tank -= 5
   end
 
-shower = HotWater.new
+  def water_left?(amount)
+     @water_tank > amount
+  end
+end
 
-shower.shower
-shower.shower
-shower.add_water
-shower.water_left_for_me
+
+# camp_shower = CampShower.new
+#
+# # Sally decides to take a long shower
+# camp_shower.long_shower
+# # Now Ted needs to take a quick shower before fishing
+# camp_shower.short_shower
+# puts camp_shower.water_tank
+# # Now Bob, being the good boyscout that he is wants to take a long shower,
+# # is there enough water?
+# unless camp_shower.water_left?(45)
+#   puts "Bob finds there is not enough water! TED!!!!"
+#   camp_shower.add_water(50)
+# end
+#
+# puts "Bob takes his desired shower"
+# camp_shower.long_shower
+#
+# puts camp_shower.water_tank
