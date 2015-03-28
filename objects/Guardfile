@@ -3,7 +3,6 @@ guard :rubocop do
   watch(%r{(?:.+/)?\.rubocop\.yml$}) { |m| File.dirname(m[0]) }
 end
 
-
 guard :rspec, cmd: "bundle exec rspec", all_on_start: true, all_after_pass: true do
   require "guard/rspec/dsl"
   dsl = Guard::RSpec::Dsl.new(self)
@@ -47,4 +46,5 @@ guard :rspec, cmd: "bundle exec rspec", all_on_start: true, all_after_pass: true
     Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
   end
 end
+
 
